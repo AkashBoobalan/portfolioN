@@ -140,7 +140,10 @@ nav{
     background: var(--first-color);
     border-radius: 50%;
 }
-
+/* ----- WRAPPER DESIGN ----- */
+.wrapper{
+    padding-inline: 10vw;
+}
 /* ----- FEATURED BOX ----- */
 .featured-box{
     position: relative;
@@ -626,40 +629,4 @@ footer{
     .input-field{
         width: 100%;
     }
-}
-
-/* ----- WRAPPER DESIGN ----- */
-.wrapper{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-
-
-/* Mobile Styles */
-@media (max-width: 767px) {
-    .wrapper {
-        padding: 10px;
-    }
-
-}
-
-/* Tablet Styles */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .wrapper {
-        padding: 15px;
-    }
-
-}
-
-/* Desktop Styles */
-@media (min-width: 1024px) {
-    .wrapper {
-        padding: 20px;
-    }
-
-    
 }
