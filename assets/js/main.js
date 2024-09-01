@@ -55,7 +55,7 @@ sr.reveal('.top-header',{})
 /* -- ABOUT INFO & CONTACT INFO -- */
 const srLeft = ScrollReveal({
 origin: 'left',
-distance: '100px',
+distance: '0px',
 duration: 2000,
 reset: true
 })
@@ -65,7 +65,7 @@ srLeft.reveal('.contact-info',{delay: 100})
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
 origin: 'right',
-distance: '80px',
+distance: '0px',
 duration: 2000,
 reset: true
 })
