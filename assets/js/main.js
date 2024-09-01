@@ -7,6 +7,7 @@ function myMenuFunction(){
     menuBtn.className = "nav-menu";
   }
 }
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function() {headerShadow()};
 function headerShadow() {
@@ -90,6 +91,28 @@ sections.forEach(current =>{
 })
 }
 window.addEventListener('scroll', scrollActive)
+
+/* ========= SEND MESSAGE ========= */
+
+function composeEmail() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const message = document.getElementById("message").value;
+
+  // Construct the mailto link
+  const subject = encodeURIComponent("New Contact Form Submission");
+  const body = encodeURIComponent(`
+      Name: ${name}
+      Email: ${email}
+      Phone: ${phone}
+      Message: ${message}
+    `);
+  const mailtoLink = `mailto:akashboobalan001@gmail.com?subject=${subject}&body=${body}`;
+
+  // Open the user's default email client
+  window.location.href = mailtoLink;
+}
   
   
    

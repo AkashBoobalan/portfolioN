@@ -37,19 +37,19 @@
         </div>
         <div class="nav-menu" id="myNavMenu">
             <ul class="nav_menu_list">
-                <li class="nav_list">
+                <li class="nav_list"  onclick="myMenuFunction()">
                     <a href="#home" class="nav-link active-link">Home</a>
                     <div class="circle"></div>
                 </li>
-                <li class="nav_list">
+                <li class="nav_list"  onclick="myMenuFunction()">
                     <a href="#about" class="nav-link">About</a>
                     <div class="circle"></div>
                 </li>
-                <li class="nav_list">
+                <li class="nav_list"  onclick="myMenuFunction()">
                     <a href="#projects" class="nav-link">Projects</a>
                     <div class="circle"></div>
                 </li>
-                <li class="nav_list">
+                <li class="nav_list" onclick="myMenuFunction()">
                     <a href="#contact" class="nav-link">Contact</a>
                     <div class="circle"></div>
                 </li>
@@ -208,21 +208,24 @@
              <div class="col">
                 <div class="contact-info">
                     <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: akashboobalan.com</p>
+                    <p><i class="uil uil-envelope"></i> Email: akashboobalan001@gmail.com</p>
                     <p><i class="uil uil-phone"></i> Ph: 9150431518</p>
                 </div>
              </div>
              <div class="col">
                 <div class="form-control">
                     <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
+                        <input id="name" type="text" class="input-field" placeholder="Name">
+                        <input id="email" type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div>
+                        <input id="phone" type="tel" class="input-field" placeholder="Phone">
                     </div>
                     <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
+                        <textarea id="message" placeholder="Message"></textarea>
                     </div>
                     <div class="form-button">
-                        <button class="btn" >Send 
+                        <button class="btn" onclick="composeEmail()" >Send 
                             <i class="uil uil-message"></i>
                         </button>
                     </div>
