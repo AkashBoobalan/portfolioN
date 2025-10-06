@@ -245,7 +245,7 @@ nav{
 }
 .scroll-btn{
    position: absolute;
-   bottom: -40px;
+   bottom: 0;
    left: 50%;
    translate: -50%;
    display: flex;
