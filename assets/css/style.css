@@ -17,7 +17,9 @@
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
-
+.justified-text {
+    text-align: justify; /* This is the key property and value */
+  }
 /* ----- BASE ----- */
 *{
     margin: 0;
